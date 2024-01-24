@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');  
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #ffffff;
+    
+}
+.navbar-links{
+    display: flex;
+    column-gap: 10px;
+}
+.navbar-links a{
+    text-decoration: none;
+    color: #1D232C;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+}
+.navbar-toggle-menu{
+    display: none;
+}
+/* Side Navbar */
+.side-navbar{
+    background-color: #1D232C;
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+   transition: 1s;
+   
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+
+}
+.side-navbar-link a{
+    text-decoration: none;
+    color: white;
+}
+.side-navbar-links a:hover{
+    text-decoration: underline;
+}
+
+/* Header */
+  
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 50px;
+}
+.header-btn{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+/* Service */
+.service{
+    padding: 20px;
+}
+.service-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-container-2{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.service-container-2 div{
+    background-color: #F2F4F7;   
+    padding: 10px;
+}
+.new-arrival{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.new-arrival-container{
+    position: relative;
+    flex-basis: 20%;
+}
+.new-arrival button{
+  
+   
+    padding: 5% 10% 5% 10%;
+
+    color: #1D232C;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    border-radius: 10px;
+    border: none;
+}
+/* News  */
+.news{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.news input{
+    margin-top: 5px;
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 3px;
+}
+.news button{
+    margin-top: 10px;
+    color: #F2F4F7;
+    background-color: #1D232C;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+/* footer */
+.footer{
+    margin-top: 20px;
+    padding: 40px;
+    background-color: #1D232C;
+    color: #ffffff;
+}
+
+/* Product */
+.product-section{
+    margin-top: 20px;
+}
+.product-search{
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+.product-search input{
+    border: none;
+    background: transparent;
+    width: 100%;
+}
+.product-search input:focus{
+    outline: none;
+}
+
+.products{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.products-box{
+    text-align: center;
+    flex-basis: 20%;
+}
+.products-box img{
+    border-radius: 10px;
+}
+
+/* Contact */
+.contact{
+    
+     background-color: #1D232C;
+     padding: 40px;
+     width: 65vw;
+    align-items: center;
+    margin: 0 auto;
+}
+.contact h2{
+    color: white;
+}
+.contact-fields h4{
+    color: white;
+}
+.ip-box{
+    padding: 10px;
+    width: 62vw;
+    margin-top: 10px;
+}
+.ip-btn{
+    background-color: #008CBA;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.ip-msg-box{
+    padding: 25px;
+    width: 60vw;
+    margin-top: 10px;
+}
+
+
+/* Media queries */
+@media screen and (max-width:700px){
+    .navbar-toggle-menu{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .header-image{
+        display: none;
+    }
+    .service-container-1{
+        display: none;
+    }
+    .service-container-2{
+        flex-direction: column;
+    }
+    
+}
